@@ -73,7 +73,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         type: TextInputType.visiblePassword,
                         prefix: Icons.lock,
                         label: 'password',
-                      suffix: Icons.remove_red_eye,
+                      suffix: isPassword?Icons.visibility:Icons.visibility_off,
 
                       isPassword: isPassword,
                       suffixpressed: (){
